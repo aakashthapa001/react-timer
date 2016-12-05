@@ -1,11 +1,12 @@
-var React = require('react');
+var React = require('react'),
+    Clock = require('Clock');
 
 // Create Timer Component
 var Timer = React.createClass({
   render: function() {
     return(
       <div>
-        <h1>This is Timer</h1>
+        <Clock totalSeconds={129}/>
       </div>
     );
   }
