@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
-    'script!foundation-sites/dist/foundation.min.js',
+    'script!foundation-sites/dist/js/foundation.min.js',
     './app/app.jsx'
   ],
   externals: {
@@ -23,10 +23,11 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
+      applicationStyles: 'app/styles/app.scss',
       Nav: 'app/components/Nav.jsx',
       Timer: 'app/components/Timer.jsx',
       Countdown: 'app/components/Countdown.jsx',
-      applicationStyles: 'app/styles/app.scss'
+      Clock: 'app/components/Clock.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
